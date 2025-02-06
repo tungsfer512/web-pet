@@ -1,0 +1,115 @@
+.register {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  &-container {
+    width: 400px;
+    margin: auto;
+    &-input {
+      width: 100%;
+      padding: 5px 10px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $textGray;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      ion-icon {
+        font-size: 24px;
+        margin-right: 20px;
+      }
+      input {
+        padding: 12px 20px;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        flex: 1;
+      }
+    }
+    &-button {
+      display: flex;
+      // flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15px;
+      button {
+        display: block;
+        width: 30%;
+        font-size: 20px;
+      }
+    }
+    &-login {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 15px;
+      p {
+        font-size: 14px;
+      }
+      a {
+        margin-left: 10px;
+        font-size: 14px;
+        color: $primaryColor;
+        &:hover {
+          color: $secondaryColor;
+        }
+      }
+    }
+    &-other {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      p {
+        font-size: 14px;
+      }
+      a {
+        margin-left: 20px;
+      }
+      ion-icon {
+        font-size: 24px;
+        background-color: $secondaryBackground;
+        padding: 10px;
+        border-radius: 50px;
+        cursor: pointer;
+      } 
+      >a {
+        &:nth-of-type(1) {
+          ion-icon {
+            color: $facebookBackground;
+            &:hover {
+              background-color: $facebookBackground;
+              color: $textWhite;
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          ion-icon {
+            color: $googleBackground;
+            &:hover {
+              background-color: $googleBackground;
+              color: $textWhite;
+            }
+          }
+        }
+        &:nth-of-type(3) {
+          ion-icon {
+            color: $twitterBackground;
+            &:hover {
+              background-color: $twitterBackground;
+              color: $textWhite;
+            }
+          }
+        }
+        &:nth-of-type(4) {
+          ion-icon {
+            color: $linkedinBackground;
+            &:hover {
+              background-color: $linkedinBackground;
+              color: $textWhite;
+            }
+          }
+        }
+      }
+    }
+  }
+}

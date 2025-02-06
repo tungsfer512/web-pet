@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-WebThiTaApplication<WebThiTA>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "WebThiTA.WebThiTaApplication",
+            "projectName": "WebThiTA",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+* {
+	font-family: $fontBody;
+	padding: 0;
+	margin: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  color: $textBlack;
+}
+
+body {
+	overflow: hidden scroll;
+}
+
+a {
+  text-decoration: none;
+  color: $textBlack;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ol, ul {
+	list-style: none;
+}

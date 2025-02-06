@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="header-bot-left">
+    <div class="header-bot-left-item">
+      <span>
+        <svg width="20" height="20" class="svg-icon klook-symbol-gray-900">
+          <use href="#common-icon_travel_location_s" xlink:href="#common-icon_travel_location_s"></use>
+        </svg>
+        Nơi bạn muốn đến
+      </span>
+    </div>
+    <div class="header-bot-left-item">
+      <span>Tất cả</span>
+    </div>
+    <div class="header-bot-left-item">
+      <span>Vui chơi & giải trí</span>
+    </div>
+    <div class="header-bot-left-item">
+      <SPAN>Di chuyển</SPAN>
+    </div>
+    <div class="header-bot-left-item">
+      <span>Lưu trú</span>
+    </div>
+    <div class="header-bot-left-item">
+      <span>Khám phá nhiều hơn nữa</span>
+    </div>
+  </div>
+  <div class="header-bot-right">
+    <div class="header-bot-right-item">
+      <div class="header-bot-right-item-img">
+        <img src="" alt="">
+      </div>
+      <span>Trắc nghiệm tính cách</span>
+    </div>
+    <div class="header-bot-right-item">
+      <div class="header-bot-right-item-img">
+        <img src="" alt="">
+      </div>
+      <span>Phiếu tặng quà Klook</span>
+
+    </div>
+  </div>
+</div>

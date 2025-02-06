@@ -1,0 +1,41 @@
+.btn {
+	position: relative;
+	font-size: 14px;
+	padding: 10px 25px;
+	cursor: pointer;
+}
+.btn-round-4 {
+	border: none;
+	outline: none;
+	border-radius: 4px;
+}
+.btn-primary {
+	background: $primaryColor;
+	color: $textWhite;
+	box-shadow: inset 0 -2px 0 0 $primaryInsetShadowColor;
+  &:hover {
+    background: $primaryHoveredColor;
+  }
+}
+.btn-secondary {
+	background: $secondaryColor;
+	color: $textWhite;
+  &:hover {
+    background: $secondaryHoveredColor;
+  }
+}
+
+.btn-round {
+  border-radius: 50px;
+}
+
+.btn-hover-primary {
+	color: $textGrayLight;
+	border: 1px solid $primaryBorderColor;
+  transition: background 0.5s ease;
+	&:hover {
+		color: $textWhite;
+		background: $primaryHoveredColor;
+		box-shadow: inset 0 -2px 0 0 $primaryInsetShadowColor;
+	}
+}

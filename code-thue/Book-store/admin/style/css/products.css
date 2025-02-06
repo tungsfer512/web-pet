@@ -1,0 +1,8 @@
+@media screen and (max-width: 1140px) {
+  button {
+    float: left !important;
+  }
+  .body-container {
+    overflow: scroll;
+  }
+}

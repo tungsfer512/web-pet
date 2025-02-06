@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blooger</title>
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="/css/Style.css">
+
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">Blooger</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a th:href="@{/}">Home</a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a th:href="@{/list}">Archive</a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a href="#">About me</a>
+                    </li>
+                    <li class="nav-link">
+                        <a th:href="@{/add}">Write a Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
+                <h3>Lifestyle & Travels</h3>
+                <h1>Let me take you around the world </h1>
+                <button class="btn">Explore</button>
+                <h3>Hi guys, I am fouder of the blog. In this blog will be stories about my life and my travel.
+                    Would you Explore it with me?
+                </h3>
+            </div>
+        </section>
+        
+
+    
+		<br><br>
+        <section class="container">
+            <div class="site-content">
+                <div class="posts" >
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200" th:each="item:${baiviet}" th:object="${item}">
+                        <div class="post-image">
+                            
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;</span>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a th:href="@{'/blog/'+*{id}}" th:text="*{title}"></a>
+                            <p th:text="*{preContent}">
+                            </p>
+                            <a th:href="@{'/blog/'+*{id}}"><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></a>
+                        </div>
+                        <hr>
+                    </div>
+                    
+                    
+                </div>
+                <aside class="sidebar">
+                    <div class="category">
+                        <h2>Category</h2>
+                        <ul class="category-list">
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="100" th:each="item : ${category}" th:object="${item}">
+                                <a href="#">[[${item.name}]]</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
+                        <h2>Write a Blog</h2>
+                        <div class="form-element">
+                            <input type="text" class="input-element" placeholder="Email">
+                            <input type="text" class="input-element" placeholder="Name">
+                            <a th:href="@{/add}"><button class="btn form-btn">Start</button></a>
+
+                        </div>
+                    </div>
+                    <div class="popular-tags">
+                        <h2>Popular Tags</h2>
+                        <div class="tags flex-row">
+                            <span class="tag" data-aos="flip-up" data-aos-delay="100">#makeup</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="200">#healthy</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="300">#travel</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="400">#Illustration</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="500">#design</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="600">#lifestyle</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="700">#love</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="800">#project</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About me</h2>
+                <p>Hi, I'm Quyn, the founder of  blog, in this blog is mainly my experience and experiences.Hope these articles help you have a little more experience, and inspiration to be able to explore the world..</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <h2>Contact</h2>
+                <p>254 Minh Khai, Hoang Mai</p>
+                <p>quynh1543864@nuce.edu.vn</p>
+                <p>0342139204</p>
+                
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="assets/instagram/thumb-card3.png" alt="insta1">
+                    <img src="assets/instagram/thumb-card4.png" alt="insta2">
+                    <img src="assets/instagram/thumb-card5.png" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="assets/instagram/thumb-card6.png" alt="insta4">
+                    <img src="assets/instagram/thumb-card7.png" alt="insta5">
+                    <img src="assets/instagram/thumb-card8.png" alt="insta6">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow me</h2>
+                <p>Let me be Social</p>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                made by quynh
+                
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+    <script src="/js/Jquery3.4.1.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

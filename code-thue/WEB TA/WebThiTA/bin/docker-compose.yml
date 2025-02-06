@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456a@
+      MYSQL_DATABASE: webta
+      MYSQL_USER: minhdat
+      MYSQL_PASSWORD: minhdat
+    ports:
+      - '3006:3306'

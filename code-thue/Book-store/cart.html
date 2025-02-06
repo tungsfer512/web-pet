@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <!-- GG Fonts Work Sans + Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <!-- GG Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- IonIcons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/css/scroller.css">
+    <link rel="stylesheet" href="style/css/style.css">
+  </head>
+
+  <body>
+    <header class="header"></header>
+    <div class="breadcrumb">
+      <div class="breadcrumb-content">
+        <h1>Your Cart</h1>
+        <span>Home > Cart</span>
+      </div>
+    </div>
+    <div class="cart">
+      <div class="cart-container full-size-container padding-top-bot-60">
+        <div class="cart-container-table">
+          <table>
+            <thead>
+              <th>#</th>
+              <th>Image</th>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+              <th></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <img src="assets/images/book01.jpg" alt="">
+                </td>
+                <td>
+                  <a href="product_detail.html">The Lord of the Rings</a>
+                </td>
+                <td>$10.00</td>
+                <td>
+                  <div class="quantity">
+                    <span class="btn btn-round-4 btn-hover-primary">-</span>
+                    <input type="number" value="1" readonly min="1" max="10">
+                    <span class="btn btn-round-4 btn-hover-primary">+</span>
+                  </div>
+                </td>
+                <td>$10.00</td>
+                <td>
+                  <ion-icon name="trash"></ion-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <img src="assets/images/book01.jpg" alt="">
+                </td>
+                <td>
+                  The Lord of the Rings
+                </td>
+                <td>$10.00</td>
+                <td>
+                  <div class="quantity">
+                    <span class="btn btn-round-4 btn-hover-primary">-</span>
+                    <input type="number" value="1" readonly min="1" max="10">
+                    <span class="btn btn-round-4 btn-hover-primary">+</span>
+                  </div>
+                </td>
+                <td>$10.00</td>
+                <td>
+                  <ion-icon name="trash"></ion-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <img src="assets/images/book01.jpg" alt="">
+                </td>
+                <td>
+                  The Lord of the Rings
+                </td>
+                <td>$10.00</td>
+                <td>
+                  <div class="quantity">
+                    <span class="btn btn-round-4 btn-hover-primary">-</span>
+                    <input type="number" value="1" readonly min="1" max="10">
+                    <span class="btn btn-round-4 btn-hover-primary">+</span>
+                  </div>
+                </td>
+                <td>$10.00</td>
+                <td>
+                  <ion-icon name="trash"></ion-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <img src="assets/images/book01.jpg" alt="">
+                </td>
+                <td>
+                  The Lord of the Rings
+                </td>
+                <td>$10.00</td>
+                <td>
+                  <div class="quantity">
+                    <span class="btn btn-round-4 btn-hover-primary">-</span>
+                    <input type="number" value="1" readonly min="1" max="10">
+                    <span class="btn btn-round-4 btn-hover-primary">+</span>
+                  </div>
+                </td>
+                <td>$10.00</td>
+                <td>
+                  <ion-icon name="trash"></ion-icon>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+        <div class="cart-container-bottom">
+          <div class="cart-container-bottom-coupon">
+            <div class="cart-container-bottom-coupon-title">
+              Coupon
+            </div>
+            <div class="cart-container-bottom-coupon-input">
+              <input type="text" placeholder="Enter your coupon code">
+              <button class="btn btn-round-4 btn-primary">Apply</button>
+            </div>
+          </div>
+
+          <div class="cart-container-bottom-checkout">
+            <div class="cart-container-bottom-checkout-subtotal">
+              <div class="cart-container-bottom-checkout-subtotal-title">
+                Subtotal
+              </div>
+              <div class="cart-container-bottom-checkout-subtotal-price">
+                $10.00
+              </div>
+            </div>
+            <div class="cart-container-bottom-checkout-total">
+              <div class="cart-container-bottom-checkout-total-title">
+                Total
+              </div>
+              <div class="cart-container-bottom-checkout-total-price">
+                $10.00
+              </div>
+            </div>
+            <div class="cart-container-bottom-checkout-button">
+              <a href="checkout.html" class="btn btn-round-4 btn-primary">Proceed To Checkout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+    <a href="#" class="go-to-top">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+  </body>
+
+</html>
+<script>
+  $(".header").load("header.html");
+  $(".footer").load("footer.html");
+</script>
+<script src="js/header.js"></script>
+<script src="js/quantity.js"></script>

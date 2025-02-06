@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blooger</title>
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="/css/Style.css">
+	  <link href="/css/Thi.css" rel="stylesheet" />
+  <link href="/css/BaiHoc.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">Blooger</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a th:href="@{/}">Home</a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a th:href="@{/list}">Archive</a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a href="#">About me</a>
+                    </li>
+                    <li class="nav-link">
+                        <a th:href="@{/add}">Write a Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
+                <h3>Lifestyle & Travels</h3>
+                <h1>Let me take you around the world </h1>
+                <button class="btn">Explore</button>
+                <h3>Hi guys, I am fouder of the blog. In this blog will be stories about my life and my travel.
+                    Would you Explore it with me?
+                </h3>
+            </div>
+        </section>
+        
+
+    
+
+        <section class="container">
+            <div id="content" class="container-fluid fill ">
+			
+				<form th:action="@{/saveOrUpdate}" method="post">
+						<div class="ntitle">
+                          <label for="category">Catgory:</label>
+                          <select class="form-control" name="categoryId" id="category">
+                            <option th:each=" category: ${categories }" th:value="${category.id}" th:text="${category.name}" th:selected="${category.id}==${baiHoc.id}"></option>
+                          
+                          </select>
+                        </div>
+					<h2 class="ntitle" >Title: <textarea th:field="${baiHoc.title}"></textarea></h2> 
+				<input type="hidden" th:field="${baiHoc.id}">
+				<!--Nội dung bài test -->
+				<div  class="nlistbaithi">
+						
+						<div th:object="${baiHoc}">
+							
+
+							<div class="ncontent">
+								<p class="nkt">	
+									<b>Title1:</b>
+								</p>
+								
+								<textarea th:field="${baiHoc.title1}"></textarea>
+								<br>
+								<b>Content1:</b>
+								<textarea th:field="${baiHoc.content1}" id="editor1"></textarea>
+							</div>
+							<div class="ncontent">
+								<p class="nkt">	
+									<b>Title2:</b>
+								</p>
+								
+								<textarea th:field="${baiHoc.title2}"></textarea>
+								<br>
+								<b>Content2:</b>
+								<textarea th:field="${baiHoc.content2}" id="editor2"></textarea>
+							</div>
+							<div class="ncontent">
+								<p class="nkt">	
+									<b>Title3:</b>
+								</p>
+								
+								<textarea th:field="${baiHoc.title3}"></textarea>
+								<br>
+								<b>Content3:</b>
+								<textarea th:field="${baiHoc.content3}" id="editor3"></textarea>
+							</div>
+							<div class="ncontent">
+								<p class="nkt">	
+									<b>Title4:</b>
+								</p>
+								
+								<textarea th:field="${baiHoc.title4}"></textarea>
+								<br>
+								<b>Content4:</b>
+								<textarea th:field="${baiHoc.content4}" id="editor4"></textarea>
+							</div>
+							<br>
+							
+							
+							
+								
+						</div>
+
+
+					</div>
+				
+					<button class="btn btn-primary nlistbaithi"><i class="fa fa-save  "></i>
+                    
+                    <span >Save</span>
+                </button>
+				</form>	
+			
+				
+				
+			
+		</div>
+        </section>
+
+        
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About me</h2>
+                <p>Hi, I'm Quyn, the founder of  blog, in this blog is mainly my experience and experiences.Hope these articles help you have a little more experience, and inspiration to be able to explore the world..</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <h2>Contact</h2>
+                <p>254 Minh Khai, Hoang Mai</p>
+                <p>quynh1543864@nuce.edu.vn</p>
+                <p>0342139204</p>
+                
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="assets/instagram/thumb-card3.png" alt="insta1">
+                    <img src="assets/instagram/thumb-card4.png" alt="insta2">
+                    <img src="assets/instagram/thumb-card5.png" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="assets/instagram/thumb-card6.png" alt="insta4">
+                    <img src="assets/instagram/thumb-card7.png" alt="insta5">
+                    <img src="assets/instagram/thumb-card8.png" alt="insta6">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow me</h2>
+                <p>Let me be Social</p>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                made by quynh
+                
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+    <script src="/js/Jquery3.4.1.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+<script src="/js/ckeditor.js"></script>
+
+<script>
+	ClassicEditor
+		.create( document.querySelector( '#editor1' ), {
+			// toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+		} )
+		.then( editor => {
+			window.editor = editor;
+		} )
+		.catch( err => {
+			console.error( err.stack );
+		} );
+</script>
+<script>
+	ClassicEditor
+		.create( document.querySelector( '#editor2' ), {
+			// toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+		} )
+		.then( editor => {
+			window.editor = editor;
+		} )
+		.catch( err => {
+			console.error( err.stack );
+		} );
+</script>
+<script>
+	ClassicEditor
+		.create( document.querySelector( '#editor3' ), {
+			// toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+		} )
+		.then( editor => {
+			window.editor = editor;
+		} )
+		.catch( err => {
+			console.error( err.stack );
+		} );
+</script>
+<script>
+	ClassicEditor
+		.create( document.querySelector( '#editor4' ), {
+			// toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+		} )
+		.then( editor => {
+			window.editor = editor;
+		} )
+		.catch( err => {
+			console.error( err.stack );
+		} );
+</script>
+</html>

@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <!-- GG Fonts Work Sans + Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <!-- GG Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- IonIcons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/css/scroller.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="style/css/products_res.css">
+  </head>
+
+  <body>
+    <header class="header"></header>
+    <div class="breadcrumb">
+      <div class="breadcrumb-content">
+        <h1>All Products</h1>
+        <span>Home > Products</span>
+      </div>
+    </div>
+    <div class="body full-size-container padding-top-bot-100">
+      <div class="body-left">
+        <div class="body-left-container">
+          <div class="body-left-container-item body-left-container-item-1">
+            <div class="body-left-container-item-heading">Filters</div>
+            <div class="body-left-container-item-1-body">
+              <div class="body-left-container-item-1-body-item">
+                <div class="body-left-container-item-1-body-item-heading">Category</div>
+                <div class="body-left-container-item-1-body-item-body">
+                  <select>
+                    <option value="0">All</option>
+                    <option value="1">Arts & Photography</option>
+                    <option value="2">Biography</option>
+                    <option value="3">Children</option>
+                    <option value="4">Craft & Hobbies</option>
+                    <option value="5">Crime & Thriller</option>
+                    <option value="6">Fantasy & Horror</option>
+                    <option value="7">Fiction</option>
+                    <option value="8">Food & Drink</option>
+                    <option value="9">Graphic, Anime & Manga</option>
+                    <option value="10">Science Fiction</option>
+                  </select>
+                </div>
+              </div>
+              <div class="body-left-container-item-1-body-item">
+                <div class="body-left-container-item-1-body-item-heading">Price</div>
+                <div class="body-left-container-item-1-body-item-body">
+                  <select>
+                    <option value="0">All</option>
+                    <option value="1">$0 - $10</option>
+                    <option value="2">$10 - $20</option>
+                    <option value="3">$20 - $30</option>
+                    <option value="4">$30 - $40</option>
+                    <option value="5">$40 - $50</option>
+                    <option value="6">$50 - $60</option>
+                    <option value="7">$60 - $70</option>
+                    <option value="8">$70 - $80</option>
+                    <option value="9">$80 - $90</option>
+                    <option value="10">$90 - $100</option>
+                  </select>
+                </div>
+              </div>
+              <div class="body-left-container-item-1-body-item">
+                <div class="body-left-container-item-1-body-item-heading">Language</div>
+                <div class="body-left-container-item-1-body-item-body">
+                  <select>
+                    <option value="0">All</option>
+                    <option value="1">English</option>
+                    <option value="2">French</option>
+                    <option value="3">German</option>
+                    <option value="4">Spanish</option>
+                    <option value="5">Italian</option>
+                    <option value="6">Japanese</option>
+                    <option value="7">Korean</option>
+                    <option value="8">Portuguese</option>
+                    <option value="9">Russian</option>
+                    <option value="10">Chinese</option>
+                  </select>
+                </div>
+              </div>
+              <div class="body-left-container-item-1-body-item">
+                <div class="body-left-container-item-1-body-item-heading">Author</div>
+                <div class="body-left-container-item-1-body-item-body">
+                  <select>
+                    <option value="0">All</option>
+                    <option value="1">Author 1</option>
+                    <option value="2">Author 2</option>
+                    <option value="3">Author 3</option>
+                    <option value="4">Author 4</option>
+                    <option value="5">Author 5</option>
+                    <option value="6">Author 6</option>
+                    <option value="7">Author 7</option>
+                    <option value="8">Author 8</option>
+                    <option value="9">Author 9</option>
+                    <option value="10">Author 10</option>
+                  </select>
+                </div>
+              </div>
+              <div class="body-left-container-item-1-body-item">
+                <div class="body-left-container-item-1-body-item-heading">Publisher</div>
+                <div class="body-left-container-item-1-body-item-body">
+                  <select>
+                    <option value="0">All</option>
+                    <option value="1">Publisher 1</option>
+                    <option value="2">Publisher 2</option>
+                    <option value="3">Publisher 3</option>
+                    <option value="4">Publisher 4</option>
+                    <option value="5">Publisher 5</option>
+                    <option value="6">Publisher 6</option>
+                    <option value="7">Publisher 7</option>
+                    <option value="8">Publisher 8</option>
+                    <option value="9">Publisher 9</option>
+                    <option value="10">Publisher 10</option>
+                  </select>
+                </div>
+              </div>
+              <div class="body-left-container-item-1-body-item">
+                <div class="body-left-container-item-1-body-item-button btn btn-round-4 btn-hover-primary">Apply</div>
+              </div>
+            </div>
+          </div>
+          <div class="body-left-container-item body-left-container-item-2">
+            <div class="body-left-container-item-heading">Trending Products</div>
+            <div class="body-left-container-item-2-body">
+              <div class="body-left-container-item-2-body-item">
+                <div class="body-left-container-item-2-body-item-image">
+                  <img src="assets/images/news01.jpg" alt="">
+                </div>
+                <div class="body-left-container-item-2-body-item-content">
+                  <a href="product_detail.html">Where The Wild Things Are</a>
+                  <span>
+                    By:
+                    <a href="author_detail.html">Kathrine Culbertson</a>
+                  </span>
+                </div>
+              </div>
+              <div class="body-left-container-item-2-body-item">
+                <div class="body-left-container-item-2-body-item-image">
+                  <img src="assets/images/news02.jpg" alt="">
+                </div>
+                <div class="body-left-container-item-2-body-item-content">
+                  <a href="product_detail.html">Where The Wild Things Are</a>
+                  <span>
+                    By:
+                    <a href="author_detail.html">Kathrine Culbertson</a>
+                  </span>
+                </div>
+              </div>
+              <div class="body-left-container-item-2-body-item">
+                <div class="body-left-container-item-2-body-item-image">
+                  <img src="assets/images/news03.jpg" alt="">
+                </div>
+                <div class="body-left-container-item-2-body-item-content">
+                  <a href="product_detail.html">Where The Wild Things Are</a>
+                  <span>
+                    By:
+                    <a href="author_detail.html">Kathrine Culbertson</a>
+                  </span>
+                </div>
+              </div>
+              <div class="body-left-container-item-2-body-item">
+                <div class="body-left-container-item-2-body-item-image">
+                  <img src="assets/images/news04.jpg" alt="">
+                </div>
+                <div class="body-left-container-item-2-body-item-content">
+                  <a href="product_detail.html">Where The Wild Things Are</a>
+                  <span>
+                    By:
+                    <a href="author_detail.html">Kathrine Culbertson</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="body-left-container-item body-left-container-item-3">
+            <div class="body-left-container-item-heading">Instagram</div>
+            <div class="body-left-container-item-3-body">
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram01.jpg" alt="">
+                </div>
+              </div>
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram02.jpg" alt="">
+                </div>
+              </div>
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram03.jpg" alt="">
+                </div>
+              </div>
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram04.jpg" alt="">
+                </div>
+              </div>
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram05.jpg" alt="">
+                </div>
+              </div>
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram06.jpg" alt="">
+                </div>
+              </div>
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram07.jpg" alt="">
+                </div>
+              </div>
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram08.jpg" alt="">
+                </div>
+              </div>
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram09.jpg" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="body-left-container-item body-left-container-item-4">
+            <div class="body-left-container-item-heading">Top Bloggers</div>
+            <div class="body-left-container-item-4-body">
+              <div class="body-left-container-item-4-body-item">
+                <div class="body-left-container-item-4-body-item-image">
+                  <img src="assets/images/author09.jpg" alt="">
+                </div>
+                <div class="body-left-container-item-4-body-item-content">
+                  <a href="author_detail.html">Kathrine Culbertson</a>
+                  <span>
+                    21,658 Published Books
+                  </span>
+                </div>
+              </div>
+              <div class="body-left-container-item-4-body-item">
+                <div class="body-left-container-item-4-body-item-image">
+                  <img src="assets/images/author09.jpg" alt="">
+                </div>
+                <div class="body-left-container-item-4-body-item-content">
+                  <a href="author_detail.html">Kathrine Culbertson</a>
+                  <span>
+                    21,658 Published Books
+                  </span>
+                </div>
+              </div>
+              <div class="body-left-container-item-4-body-item">
+                <div class="body-left-container-item-4-body-item-image">
+                  <img src="assets/images/author10.jpg" alt="">
+                </div>
+                <div class="body-left-container-item-4-body-item-content">
+                  <a href="author_detail.html">Kathrine Culbertson</a>
+                  <span>
+                    21,658 Published Books
+                  </span>
+                </div>
+              </div>
+              <div class="body-left-container-item-4-body-item">
+                <div class="body-left-container-item-4-body-item-image">
+                  <img src="assets/images/author11.jpg" alt="">
+                </div>
+                <div class="body-left-container-item-4-body-item-content">
+                  <a href="author_detail.html">Kathrine Culbertson</a>
+                  <span>
+                    21,658 Published Books
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="body-right">
+        <div class="body-right-container">
+          <div class="body-right-container-heading">
+            <span>People's Choice</span>
+            <span>Bestselling Books</span>
+          </div>
+          <div class="feature" style="margin-bottom: 30px;">
+            <div class="feature-container">
+              <div class="feature-container-img">
+                <img src="assets/images/feature.png" alt="">
+              </div>
+              <div class="feature-container-content" style="padding: 0 20px;">
+                <div class="feature-container-content-feature">
+                  <span>Feature</span>
+                </div>
+                <div class="feature-container-content-title">
+                  <a href="product_detail.html" style="font-size: 30px;">Things To Know About Green Flat Design</a>
+                </div>
+                <div class="feature-container-content-author">
+                  <span>By: </span>
+                  <a href="author_detail.html">Farrah Whisenhunt</a>
+                </div>
+                <div class="feature-container-content-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <span id="close-feature">
+              <ion-icon name="close-circle"></ion-icon>
+            </span>
+          </div>
+          <div class="products">
+            <div class="products-heading">
+              <span>SHOWING 1 TO 8 OF 20 TOTAL</span>
+              <span>
+                Sort by:
+                <select>
+                  <option value="0">Newest</option>
+                  <option value="1">Name</option>
+                  <option value="2">Low price</option>
+                  <option value="3">High price</option>
+                </select>
+              </span>
+            </div>
+            <div class="products-list">
+              <div class="product-item">
+                <a href="product_detail.html" class="product-item-img">
+                  <img src="assets/images/book01.jpg" alt="">
+                </a>
+                <div class="product-item-add-wishlist">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <span>Add To Wishlist</span>
+                </div>
+                <div class="product-item-content">
+                  <div class="product-item-content-category">
+                    <a href="products.html">First category</a>
+                  </div>
+                  <div class="product-item-content-body">
+                    <div class="product-item-content-body-sale">
+                      <!-- <span>Sale</span> -->
+                    </div>
+                    <div class="product-item-content-body-title">
+                      <a href="product_detail.html">Help Me Find My Stomach</a>
+                    </div>
+                    <div class="product-item-content-body-author">
+                      <span>By: </span>
+                      <a href="author_detail.html">Ngoc Anh Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Iste
+                        architecto voluptate reprehenderit quis alias eveniet ut corrupti inventore cum corporis
+                        ratione,
+                        soluta illum cupiditate exercitationem tempora in labore doloribus a.</a>
+                    </div>
+                    <div class="product-item-content-body-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <div class="product-item-content-body-price">
+                      <span>$25.18</span>
+                      <span>$27.20</span>
+                    </div>
+                    <div class="product-item-content-body-button">
+                      <a href="javascript:void(0)" class="btn btn-round btn-hover-primary add-to-cart">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                        <span>Add To Cart</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <a href="product_detail.html" class="product-item-img">
+                  <img src="assets/images/book02.jpg" alt="">
+                </a>
+                <div class="product-item-add-wishlist">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <span>Add To Wishlist</span>
+                </div>
+                <div class="product-item-content">
+                  <div class="product-item-content-category">
+                    <a href="products.html">First category</a>
+                  </div>
+                  <div class="product-item-content-body">
+                    <div class="product-item-content-body-sale">
+                      <!-- <span>Sale</span> -->
+                    </div>
+                    <div class="product-item-content-body-title">
+                      <a href="product_detail.html">Help Me Find My Stomach</a>
+                    </div>
+                    <div class="product-item-content-body-author">
+                      <span>By: </span>
+                      <a href="author_detail.html">Ngoc Anh Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Iste
+                        architecto voluptate reprehenderit quis alias eveniet ut corrupti inventore cum corporis
+                        ratione,
+                        soluta illum cupiditate exercitationem tempora in labore doloribus a.</a>
+                    </div>
+                    <div class="product-item-content-body-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <div class="product-item-content-body-price">
+                      <span>$25.18</span>
+                      <span>$27.20</span>
+                    </div>
+                    <div class="product-item-content-body-button">
+                      <a href="javascript:void(0)" class="btn btn-round btn-hover-primary add-to-cart">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                        <span>Add To Cart</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <a href="product_detail.html" class="product-item-img">
+                  <img src="assets/images/book03.jpg" alt="">
+                </a>
+                <div class="product-item-add-wishlist">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <span>Add To Wishlist</span>
+                </div>
+                <div class="product-item-content">
+                  <div class="product-item-content-category">
+                    <a href="products.html">First category</a>
+                  </div>
+                  <div class="product-item-content-body">
+                    <div class="product-item-content-body-sale">
+                      <!-- <span>Sale</span> -->
+                    </div>
+                    <div class="product-item-content-body-title">
+                      <a href="product_detail.html">Help Me Find My Stomach</a>
+                    </div>
+                    <div class="product-item-content-body-author">
+                      <span>By: </span>
+                      <a href="author_detail.html">Ngoc Anh Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Iste
+                        architecto voluptate reprehenderit quis alias eveniet ut corrupti inventore cum corporis
+                        ratione,
+                        soluta illum cupiditate exercitationem tempora in labore doloribus a.</a>
+                    </div>
+                    <div class="product-item-content-body-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <div class="product-item-content-body-price">
+                      <span>$25.18</span>
+                      <span>$27.20</span>
+                    </div>
+                    <div class="product-item-content-body-button">
+                      <a href="javascript:void(0)" class="btn btn-round btn-hover-primary add-to-cart">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                        <span>Add To Cart</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <a href="product_detail.html" class="product-item-img">
+                  <img src="assets/images/book04.jpg" alt="">
+                </a>
+                <div class="product-item-add-wishlist">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <span>Add To Wishlist</span>
+                </div>
+                <div class="product-item-content">
+                  <div class="product-item-content-category">
+                    <a href="products.html">First category</a>
+                  </div>
+                  <div class="product-item-content-body">
+                    <div class="product-item-content-body-sale">
+                      <!-- <span>Sale</span> -->
+                    </div>
+                    <div class="product-item-content-body-title">
+                      <a href="product_detail.html">Help Me Find My Stomach</a>
+                    </div>
+                    <div class="product-item-content-body-author">
+                      <span>By: </span>
+                      <a href="author_detail.html">Ngoc Anh Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Iste
+                        architecto voluptate reprehenderit quis alias eveniet ut corrupti inventore cum corporis
+                        ratione,
+                        soluta illum cupiditate exercitationem tempora in labore doloribus a.</a>
+                    </div>
+                    <div class="product-item-content-body-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <div class="product-item-content-body-price">
+                      <span>$25.18</span>
+                      <span>$27.20</span>
+                    </div>
+                    <div class="product-item-content-body-button">
+                      <a href="javascript:void(0)" class="btn btn-round btn-hover-primary add-to-cart">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                        <span>Add To Cart</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <a href="product_detail.html" class="product-item-img">
+                  <img src="assets/images/book05.jpg" alt="">
+                </a>
+                <div class="product-item-add-wishlist">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <span>Add To Wishlist</span>
+                </div>
+                <div class="product-item-content">
+                  <div class="product-item-content-category">
+                    <a href="products.html">First category</a>
+                  </div>
+                  <div class="product-item-content-body">
+                    <div class="product-item-content-body-sale">
+                      <!-- <span>Sale</span> -->
+                    </div>
+                    <div class="product-item-content-body-title">
+                      <a href="product_detail.html">Help Me Find My Stomach</a>
+                    </div>
+                    <div class="product-item-content-body-author">
+                      <span>By: </span>
+                      <a href="author_detail.html">Ngoc Anh Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Iste
+                        architecto voluptate reprehenderit quis alias eveniet ut corrupti inventore cum corporis
+                        ratione,
+                        soluta illum cupiditate exercitationem tempora in labore doloribus a.</a>
+                    </div>
+                    <div class="product-item-content-body-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <div class="product-item-content-body-price">
+                      <span>$25.18</span>
+                      <span>$27.20</span>
+                    </div>
+                    <div class="product-item-content-body-button">
+                      <a href="javascript:void(0)" class="btn btn-round btn-hover-primary add-to-cart">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                        <span>Add To Cart</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <a href="product_detail.html" class="product-item-img">
+                  <img src="assets/images/book06.jpg" alt="">
+                </a>
+                <div class="product-item-add-wishlist">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <span>Add To Wishlist</span>
+                </div>
+                <div class="product-item-content">
+                  <div class="product-item-content-category">
+                    <a href="products.html">First category</a>
+                  </div>
+                  <div class="product-item-content-body">
+                    <div class="product-item-content-body-sale">
+                      <!-- <span>Sale</span> -->
+                    </div>
+                    <div class="product-item-content-body-title">
+                      <a href="product_detail.html">Help Me Find My Stomach</a>
+                    </div>
+                    <div class="product-item-content-body-author">
+                      <span>By: </span>
+                      <a href="author_detail.html">Ngoc Anh Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Iste
+                        architecto voluptate reprehenderit quis alias eveniet ut corrupti inventore cum corporis
+                        ratione,
+                        soluta illum cupiditate exercitationem tempora in labore doloribus a.</a>
+                    </div>
+                    <div class="product-item-content-body-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <div class="product-item-content-body-price">
+                      <span>$25.18</span>
+                      <span>$27.20</span>
+                    </div>
+                    <div class="product-item-content-body-button">
+                      <a href="javascript:void(0)" class="btn btn-round btn-hover-primary add-to-cart">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                        <span>Add To Cart</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <a href="product_detail.html" class="product-item-img">
+                  <img src="assets/images/book07.jpg" alt="">
+                </a>
+                <div class="product-item-add-wishlist">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <span>Add To Wishlist</span>
+                </div>
+                <div class="product-item-content">
+                  <div class="product-item-content-category">
+                    <a href="products.html">First category</a>
+                  </div>
+                  <div class="product-item-content-body">
+                    <div class="product-item-content-body-sale">
+                      <!-- <span>Sale</span> -->
+                    </div>
+                    <div class="product-item-content-body-title">
+                      <a href="product_detail.html">Help Me Find My Stomach</a>
+                    </div>
+                    <div class="product-item-content-body-author">
+                      <span>By: </span>
+                      <a href="author_detail.html">Ngoc Anh Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Iste
+                        architecto voluptate reprehenderit quis alias eveniet ut corrupti inventore cum corporis
+                        ratione,
+                        soluta illum cupiditate exercitationem tempora in labore doloribus a.</a>
+                    </div>
+                    <div class="product-item-content-body-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <div class="product-item-content-body-price">
+                      <span>$25.18</span>
+                      <span>$27.20</span>
+                    </div>
+                    <div class="product-item-content-body-button">
+                      <a href="javascript:void(0)" class="btn btn-round btn-hover-primary add-to-cart">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                        <span>Add To Cart</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <a href="product_detail.html" class="product-item-img">
+                  <img src="assets/images/book08.jpg" alt="">
+                </a>
+                <div class="product-item-add-wishlist">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <span>Add To Wishlist</span>
+                </div>
+                <div class="product-item-content">
+                  <div class="product-item-content-category">
+                    <a href="products.html">First category</a>
+                  </div>
+                  <div class="product-item-content-body">
+                    <div class="product-item-content-body-sale">
+                      <!-- <span>Sale</span> -->
+                    </div>
+                    <div class="product-item-content-body-title">
+                      <a href="product_detail.html">Help Me Find My Stomach</a>
+                    </div>
+                    <div class="product-item-content-body-author">
+                      <span>By: </span>
+                      <a href="author_detail.html">Ngoc Anh Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Iste
+                        architecto voluptate reprehenderit quis alias eveniet ut corrupti inventore cum corporis
+                        ratione,
+                        soluta illum cupiditate exercitationem tempora in labore doloribus a.</a>
+                    </div>
+                    <div class="product-item-content-body-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <div class="product-item-content-body-price">
+                      <span>$25.18</span>
+                      <span>$27.20</span>
+                    </div>
+                    <div class="product-item-content-body-button">
+                      <a href="javascript:void(0)" class="btn btn-round btn-hover-primary add-to-cart">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                        <span>Add To Cart</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <a href="product_detail.html" class="product-item-img">
+                  <img src="assets/images/book09.jpg" alt="">
+                </a>
+                <div class="product-item-add-wishlist">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <span>Add To Wishlist</span>
+                </div>
+                <div class="product-item-content">
+                  <div class="product-item-content-category">
+                    <a href="products.html">First category</a>
+                  </div>
+                  <div class="product-item-content-body">
+                    <div class="product-item-content-body-sale">
+                      <!-- <span>Sale</span> -->
+                    </div>
+                    <div class="product-item-content-body-title">
+                      <a href="product_detail.html">Help Me Find My Stomach</a>
+                    </div>
+                    <div class="product-item-content-body-author">
+                      <span>By: </span>
+                      <a href="author_detail.html">Ngoc Anh Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Iste
+                        architecto voluptate reprehenderit quis alias eveniet ut corrupti inventore cum corporis
+                        ratione,
+                        soluta illum cupiditate exercitationem tempora in labore doloribus a.</a>
+                    </div>
+                    <div class="product-item-content-body-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <div class="product-item-content-body-price">
+                      <span>$25.18</span>
+                      <span>$27.20</span>
+                    </div>
+                    <div class="product-item-content-body-button">
+                      <a href="javascript:void(0)" class="btn btn-round btn-hover-primary add-to-cart">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                        <span>Add To Cart</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <a href="product_detail.html" class="product-item-img">
+                  <img src="assets/images/book10.jpg" alt="">
+                </a>
+                <div class="product-item-add-wishlist">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <span>Add To Wishlist</span>
+                </div>
+                <div class="product-item-content">
+                  <div class="product-item-content-category">
+                    <a href="products.html">First category</a>
+                  </div>
+                  <div class="product-item-content-body">
+                    <div class="product-item-content-body-sale">
+                      <!-- <span>Sale</span> -->
+                    </div>
+                    <div class="product-item-content-body-title">
+                      <a href="product_detail.html">Help Me Find My Stomach</a>
+                    </div>
+                    <div class="product-item-content-body-author">
+                      <span>By: </span>
+                      <a href="author_detail.html">Ngoc Anh Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Iste
+                        architecto voluptate reprehenderit quis alias eveniet ut corrupti inventore cum corporis
+                        ratione,
+                        soluta illum cupiditate exercitationem tempora in labore doloribus a.</a>
+                    </div>
+                    <div class="product-item-content-body-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <div class="product-item-content-body-price">
+                      <span>$25.18</span>
+                      <span>$27.20</span>
+                    </div>
+                    <div class="product-item-content-body-button">
+                      <a href="javascript:void(0)" class="btn btn-round btn-hover-primary add-to-cart">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                        <span>Add To Cart</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <a href="product_detail.html" class="product-item-img">
+                  <img src="assets/images/book11.jpg" alt="">
+                </a>
+                <div class="product-item-add-wishlist">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <span>Add To Wishlist</span>
+                </div>
+                <div class="product-item-content">
+                  <div class="product-item-content-category">
+                    <a href="products.html">First category</a>
+                  </div>
+                  <div class="product-item-content-body">
+                    <div class="product-item-content-body-sale">
+                      <!-- <span>Sale</span> -->
+                    </div>
+                    <div class="product-item-content-body-title">
+                      <a href="product_detail.html">Help Me Find My Stomach</a>
+                    </div>
+                    <div class="product-item-content-body-author">
+                      <span>By: </span>
+                      <a href="author_detail.html">Ngoc Anh Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Iste
+                        architecto voluptate reprehenderit quis alias eveniet ut corrupti inventore cum corporis
+                        ratione,
+                        soluta illum cupiditate exercitationem tempora in labore doloribus a.</a>
+                    </div>
+                    <div class="product-item-content-body-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <div class="product-item-content-body-price">
+                      <span>$25.18</span>
+                      <span>$27.20</span>
+                    </div>
+                    <div class="product-item-content-body-button">
+                      <a href="javascript:void(0)" class="btn btn-round btn-hover-primary add-to-cart">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                        <span>Add To Cart</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <a href="product_detail.html" class="product-item-img">
+                  <img src="assets/images/book12.jpg" alt="">
+                </a>
+                <div class="product-item-add-wishlist">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <span>Add To Wishlist</span>
+                </div>
+                <div class="product-item-content">
+                  <div class="product-item-content-category">
+                    <a href="products.html">First category</a>
+                  </div>
+                  <div class="product-item-content-body">
+                    <div class="product-item-content-body-sale">
+                      <!-- <span>Sale</span> -->
+                    </div>
+                    <div class="product-item-content-body-title">
+                      <a href="product_detail.html">Help Me Find My Stomach</a>
+                    </div>
+                    <div class="product-item-content-body-author">
+                      <span>By: </span>
+                      <a href="author_detail.html">Ngoc Anh Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Iste
+                        architecto voluptate reprehenderit quis alias eveniet ut corrupti inventore cum corporis
+                        ratione,
+                        soluta illum cupiditate exercitationem tempora in labore doloribus a.</a>
+                    </div>
+                    <div class="product-item-content-body-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <div class="product-item-content-body-price">
+                      <span>$25.18</span>
+                      <span>$27.20</span>
+                    </div>
+                    <div class="product-item-content-body-button">
+                      <a href="javascript:void(0)" class="btn btn-round btn-hover-primary add-to-cart">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                        <span>Add To Cart</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+    <a href="#" class="go-to-top">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+  </body>
+
+</html>
+<script>
+  $(".header").load("header.html");
+  $(".footer").load("footer.html");
+</script>
+<script src="js/header.js"></script>
+<script src="js/products.js"></script>
+<script src="js/handle.js"></script>

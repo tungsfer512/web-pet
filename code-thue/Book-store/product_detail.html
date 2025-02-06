@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <!-- GG Fonts Work Sans + Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <!-- GG Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- IonIcons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/css/scroller.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="style/css/products_res.css">
+  </head>
+
+  <body>
+    <header class="header"></header>
+    <div class="breadcrumb">
+      <div class="breadcrumb-content">
+        <h1>Product Description</h1>
+        <span>Home > Products > Product Name</span>
+      </div>
+    </div>
+    <div class="body full-size-container padding-top-bot-100">
+      <div class="body-left">
+        <div class="body-left-container">
+          <div class="body-left-container-item body-left-container-item-1">
+            <div class="body-left-container-item-heading">Find Products By Elements</div>
+            <div class="body-left-container-item-1-body">
+              <div class="body-left-container-item-1-body-item">
+                <div class="body-left-container-item-1-body-item-heading">Category</div>
+                <div class="body-left-container-item-1-body-item-body">
+                  <select>
+                    <option value="0">All</option>
+                    <option value="1">Arts & Photography</option>
+                    <option value="2">Biography</option>
+                    <option value="3">Children</option>
+                    <option value="4">Craft & Hobbies</option>
+                    <option value="5">Crime & Thriller</option>
+                    <option value="6">Fantasy & Horror</option>
+                    <option value="7">Fiction</option>
+                    <option value="8">Food & Drink</option>
+                    <option value="9">Graphic, Anime & Manga</option>
+                    <option value="10">Science Fiction</option>
+                  </select>
+                </div>
+              </div>
+              <div class="body-left-container-item-1-body-item">
+                <div class="body-left-container-item-1-body-item-heading">Price</div>
+                <div class="body-left-container-item-1-body-item-body">
+                  <select>
+                    <option value="0">All</option>
+                    <option value="1">$0 - $10</option>
+                    <option value="2">$10 - $20</option>
+                    <option value="3">$20 - $30</option>
+                    <option value="4">$30 - $40</option>
+                    <option value="5">$40 - $50</option>
+                    <option value="6">$50 - $60</option>
+                    <option value="7">$60 - $70</option>
+                    <option value="8">$70 - $80</option>
+                    <option value="9">$80 - $90</option>
+                    <option value="10">$90 - $100</option>
+                  </select>
+                </div>
+              </div>
+              <div class="body-left-container-item-1-body-item">
+                <div class="body-left-container-item-1-body-item-heading">Language</div>
+                <div class="body-left-container-item-1-body-item-body">
+                  <select>
+                    <option value="0">All</option>
+                    <option value="1">English</option>
+                    <option value="2">French</option>
+                    <option value="3">German</option>
+                    <option value="4">Spanish</option>
+                    <option value="5">Italian</option>
+                    <option value="6">Japanese</option>
+                    <option value="7">Korean</option>
+                    <option value="8">Portuguese</option>
+                    <option value="9">Russian</option>
+                    <option value="10">Chinese</option>
+                  </select>
+                </div>
+              </div>
+              <div class="body-left-container-item-1-body-item">
+                <div class="body-left-container-item-1-body-item-heading">Author</div>
+                <div class="body-left-container-item-1-body-item-body">
+                  <select>
+                    <option value="0">All</option>
+                    <option value="1">Author 1</option>
+                    <option value="2">Author 2</option>
+                    <option value="3">Author 3</option>
+                    <option value="4">Author 4</option>
+                    <option value="5">Author 5</option>
+                    <option value="6">Author 6</option>
+                    <option value="7">Author 7</option>
+                    <option value="8">Author 8</option>
+                    <option value="9">Author 9</option>
+                    <option value="10">Author 10</option>
+                  </select>
+                </div>
+              </div>
+              <div class="body-left-container-item-1-body-item">
+                <div class="body-left-container-item-1-body-item-heading">Publisher</div>
+                <div class="body-left-container-item-1-body-item-body">
+                  <select>
+                    <option value="0">All</option>
+                    <option value="1">Publisher 1</option>
+                    <option value="2">Publisher 2</option>
+                    <option value="3">Publisher 3</option>
+                    <option value="4">Publisher 4</option>
+                    <option value="5">Publisher 5</option>
+                    <option value="6">Publisher 6</option>
+                    <option value="7">Publisher 7</option>
+                    <option value="8">Publisher 8</option>
+                    <option value="9">Publisher 9</option>
+                    <option value="10">Publisher 10</option>
+                  </select>
+                </div>
+              </div>
+              <div class="body-left-container-item-1-body-item">
+                <div class="body-left-container-item-1-body-item-button btn btn-round-4 btn-hover-primary">Search</div>
+              </div>
+            </div>
+          </div>
+          <div class="body-left-container-item body-left-container-item-2">
+            <div class="body-left-container-item-heading">Trending Products</div>
+            <div class="body-left-container-item-2-body">
+              <div class="body-left-container-item-2-body-item">
+                <div class="body-left-container-item-2-body-item-image">
+                  <img src="assets/images/news01.jpg" alt="">
+                </div>
+                <div class="body-left-container-item-2-body-item-content">
+                  <a href="product_detail.html">Where The Wild Things Are</a>
+                  <span>
+                    By:
+                    <a href="author_detail.html">Kathrine Culbertson</a>
+                  </span>
+                </div>
+              </div>
+              <div class="body-left-container-item-2-body-item">
+                <div class="body-left-container-item-2-body-item-image">
+                  <img src="assets/images/news02.jpg" alt="">
+                </div>
+                <div class="body-left-container-item-2-body-item-content">
+                  <a href="product_detail.html">Where The Wild Things Are</a>
+                  <span>
+                    By:
+                    <a href="author_detail.html">Kathrine Culbertson</a>
+                  </span>
+                </div>
+              </div>
+              <div class="body-left-container-item-2-body-item">
+                <div class="body-left-container-item-2-body-item-image">
+                  <img src="assets/images/news03.jpg" alt="">
+                </div>
+                <div class="body-left-container-item-2-body-item-content">
+                  <a href="product_detail.html">Where The Wild Things Are</a>
+                  <span>
+                    By:
+                    <a href="author_detail.html">Kathrine Culbertson</a>
+                  </span>
+                </div>
+              </div>
+              <div class="body-left-container-item-2-body-item">
+                <div class="body-left-container-item-2-body-item-image">
+                  <img src="assets/images/news04.jpg" alt="">
+                </div>
+                <div class="body-left-container-item-2-body-item-content">
+                  <a href="product_detail.html">Where The Wild Things Are</a>
+                  <span>
+                    By:
+                    <a href="author_detail.html">Kathrine Culbertson</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="body-left-container-item body-left-container-item-3">
+            <div class="body-left-container-item-heading">Instagram</div>
+            <div class="body-left-container-item-3-body">
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram01.jpg" alt="">
+                </div>
+              </div>
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram02.jpg" alt="">
+                </div>
+              </div>
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram03.jpg" alt="">
+                </div>
+              </div>
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram04.jpg" alt="">
+                </div>
+              </div>
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram05.jpg" alt="">
+                </div>
+              </div>
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram06.jpg" alt="">
+                </div>
+              </div>
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram07.jpg" alt="">
+                </div>
+              </div>
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram08.jpg" alt="">
+                </div>
+              </div>
+              <div class="body-left-container-item-3-body-item">
+                <div class="body-left-container-item-3-body-item-image">
+                  <img src="assets/images/instagram09.jpg" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="body-left-container-item body-left-container-item-4">
+            <div class="body-left-container-item-heading">Top Bloggers</div>
+            <div class="body-left-container-item-4-body">
+              <div class="body-left-container-item-4-body-item">
+                <div class="body-left-container-item-4-body-item-image">
+                  <img src="assets/images/author09.jpg" alt="">
+                </div>
+                <div class="body-left-container-item-4-body-item-content">
+                  <a href="author_detail.html">Kathrine Culbertson</a>
+                  <span>
+                    21,658 Published Books
+                  </span>
+                </div>
+              </div>
+              <div class="body-left-container-item-4-body-item">
+                <div class="body-left-container-item-4-body-item-image">
+                  <img src="assets/images/author09.jpg" alt="">
+                </div>
+                <div class="body-left-container-item-4-body-item-content">
+                  <a href="author_detail.html">Kathrine Culbertson</a>
+                  <span>
+                    21,658 Published Books
+                  </span>
+                </div>
+              </div>
+              <div class="body-left-container-item-4-body-item">
+                <div class="body-left-container-item-4-body-item-image">
+                  <img src="assets/images/author10.jpg" alt="">
+                </div>
+                <div class="body-left-container-item-4-body-item-content">
+                  <a href="author_detail.html">Kathrine Culbertson</a>
+                  <span>
+                    21,658 Published Books
+                  </span>
+                </div>
+              </div>
+              <div class="body-left-container-item-4-body-item">
+                <div class="body-left-container-item-4-body-item-image">
+                  <img src="assets/images/author11.jpg" alt="">
+                </div>
+                <div class="body-left-container-item-4-body-item-content">
+                  <a href="author_detail.html">Kathrine Culbertson</a>
+                  <span>
+                    21,658 Published Books
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="body-right">
+        <div class="body-right-container">
+          <div class="feature" style="margin-bottom: 30px;">
+            <div class="feature-container">
+              <div class="feature-container-img">
+                <img src="assets/images/feature.png" alt="">
+              </div>
+              <div class="feature-container-content" style="padding: 0 20px;">
+                <div class="feature-container-content-feature">
+                  <span>Feature</span>
+                </div>
+                <div class="feature-container-content-title">
+                  <a href="product_detail.html" style="font-size: 30px;">Things To Know About Green Flat Design</a>
+                </div>
+                <div class="feature-container-content-author">
+                  <span>By: </span>
+                  <a href="author_detail.html">Farrah Whisenhunt</a>
+                </div>
+                <div class="feature-container-content-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <span id="close-feature">
+              <ion-icon name="close-circle"></ion-icon>
+            </span>
+          </div>
+          <div class="product-detail">
+            <div class="product-detail-info">
+              <div class="product-detail-info-order">
+                <div class="product-detail-info-order-img">
+                  <img src="assets/images/book01.jpg" alt="">
+                </div>
+                <div class="product-detail-info-order-price">
+                  <span>$25.12</span>
+                  <span>$28.21</span>
+                  <span>You save $3.09</span>
+                </div>
+                <div class="product-detail-info-order-ship">
+                  <div class="product-detail-info-order-ship-item">
+                    <ion-icon name="rocket-outline"></ion-icon>
+                    <span>Free Delivery Worldwide</span>
+                  </div>
+                  <div class="product-detail-info-order-ship-item">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <span>Dispatch from the USA in 2 working days</span>
+                  </div>
+                  <div class="product-detail-info-order-ship-item">
+                    <ion-icon name="storefront-outline"></ion-icon>
+                    <span>Status: <span>In Stock</span></span>
+                  </div>
+                </div>
+                <div class="product-detail-info-order-number quantity">
+                  <span class="btn btn-round-4 btn-hover-primary">-</span>
+                  <input type="number" value="1" min="1" max="10">
+                  <span class="btn btn-round-4 btn-hover-primary">+</span>
+                </div>
+                <div class="product-detail-info-order-button">
+                  <button class="btn btn-round-4 btn-primary">Add To Cart</button>
+                  <button class="btn btn-round-4 btn-secondary">Add To Wishlist</button>
+                </div>
+              </div>
+              <div class="product-detail-info-content">
+                <div class="product-detail-info-content-sale">
+                  <span>SALE</span>
+                </div>
+                <div class="product-detail-info-content-title">
+                  Things To Know About Green Flat Design
+                </div>
+                <div class="product-detail-info-content-author">By: <a href="author_detail.html">Farrah Whisenhunt</a>
+                </div>
+                <div class="product-detail-info-content-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <div class="product-detail-info-content-description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec eget ex euismod, consectetur nisi eu,
+                    consectetur.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus unde reiciendis eum voluptates
+                    error, odit expedita iste hic quis consequatur maxime asperiores natus dignissimos, eaque soluta
+                    modi commodi dicta accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque animi
+                    nihil voluptatum quaerat corrupti maiores repellat dignissimos. Ducimus corporis consectetur a! Quam
+                    quo a fugit at perspiciatis sint accusamus omnis?
+                  </p>
+                </div>
+                <div class="product-detail-info-content-details">
+                  <div class="product-detail-info-content-details-heading">
+                    Product Details
+                  </div>
+                  <ul>
+                    <li>
+                      <span>Format:</span>
+                      <span>Hardback</span>
+                    </li>
+                    <li>
+                      <span>Pages:</span>
+                      <span>541</span>
+                    </li>
+                    <li>
+                      <span>Dimension:</span>
+                      <span>153 x 234 x 43mm | 758g</span>
+                    </li>
+                    <li>
+                      <span>Publication Date:</span>
+                      <span>June 27, 2017</span>
+                    </li>
+                    <li>
+                      <span>Publisher:</span>
+                      <span>Nguyen Ngoc Anh</span>
+                    </li>
+                    <li>
+                      <span>Language:</span>
+                      <span>English</span>
+                    </li>
+                    <li>
+                      <span>Other Fomate:</span>
+                      <span>CD-Audio, Paperback, E-Book</span>
+                    </li>
+                  </ul>
+                  <div class="product-detail-info-content-details-other">
+                    <h3>Also Available In:</h3>
+                    <ul>
+                      <li><a href="javascript:void(0);">CD-Audio $18.30</a></li>
+                      <li><a href="javascript:void(0);">Paperback $20.10</a></li>
+                      <li><a href="javascript:void(0);">E-Book $11.30</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-detail-description">
+              <div class="product-detail-description-heading">Product Description</div>
+              <div class="product-detail-description-content">
+                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veni
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                  dolor in reprehenden
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="product-detail-description-content-img">
+                  <div class="product-detail-description-content-img-contain">
+                    <img src="assets/images/book02.jpg" alt="">
+                  </div>
+                  <ul>
+                    <li>Sed do eiusmod tempor incididunt ut labore et dolore</li>
+                    <li>Magna aliqua enim ad minim veniam</li>
+                    <li>Quis nostrud exercitation ullamco laboris nisi ut</li>
+                    <li>Aliquip ex ea commodo consequat aute dolor reprehenderit</li>
+                    <li>Voluptate velit esse cillum dolore eu fugiat nulla pariatur</li>
+                    <li>Magna aliqua enim ad minim veniam</li>
+                    <li>Quis nostrud exercitation ullamco laboris nisi ut</li>
+                    <li>Quis nostrud exercitation ullamco laboris nisi ut</li>
+                  </ul>
+                </div>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                  totam remmata aperiam,
+                  eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                  Nemo enimsam
+                  voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                  quistatoa.</p>
+              </div>
+            </div>
+            <div class="product-detail-author">
+              <div class="product-detail-author-heading">About Author</div>
+              <div class="product-detail-author-content">
+                <div class="product-detail-author-content-img">
+                  <img src="assets/images/author09.jpg" alt="">
+                </div>
+                <div class="product-detail-author-content-description">
+                  <div class="product-detail-author-content-description-1">
+                    <div class="product-detail-author-content-description-1-info">
+                      <div class="product-detail-author-content-description-1-info-name">
+                        Kathrine Culbertson
+                      </div>
+                      <div class="product-detail-author-content-description-1-info-start">
+                        Author Since: June 27, 2017
+                      </div>
+                    </div>
+                    <div class="product-detail-author-content-description-1-contact">
+                      <a href="javascript:void(0);">
+                        <ion-icon name="logo-google"></ion-icon>
+                      </a>
+                      <a href="javascript:void(0);">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                      </a>
+                      <a href="javascript:void(0);">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                      </a>
+                      <a href="javascript:void(0);">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-detail-author-content-description-2">
+                    Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium
+                    totam rem aperiam
+                    eaque ipsa quae ab illo inventore veritatis etation.
+                    Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium
+                    totam rem aperiam
+                    eaque ipsa quae ab illo inventore veritatis etation.
+                  </div>
+                  <div class="product-detail-author-content-description-3">
+                    <a href="author_detail.html" class="btn btn-round-4 btn-primary">View all infomation</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+    <a href="#" class="go-to-top">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+  </body>
+
+</html>
+<script>
+  $(".header").load("header.html");
+  $(".footer").load("footer.html");
+</script>
+<script src="js/header.js"></script>
+<script src="js/products.js"></script>
+<script src="js/quantity.js"></script>

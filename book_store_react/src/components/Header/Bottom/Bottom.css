@@ -1,0 +1,78 @@
+.active {
+  text-decoration: underline !important;
+}
+
+.header-top-logo img {
+  height    : 100%;
+  object-fit: contain;
+}
+
+.header-top-search .advanced-search {
+  font-size: 14px;
+}
+
+.header-top-list-wishlist,
+.header-top-list-cart {
+  font-weight: 600;
+  cursor     : pointer;
+}
+
+.header-top-list-wishlist i,
+.header-top-list-cart i {
+  font-size: 24px;
+}
+
+.header-top-list-wishlist i span,
+.header-top-list-cart i span {
+  font-size: 12px;
+}
+
+.header-bottom {
+  top  : 0;
+  left : 0;
+  right: 0;
+}
+
+.header-bottom .navbar {
+  min-height: 64px;
+}
+
+.header-bottom .navbar .nav-item .nav-link {
+  color  : #fff;
+  padding: 0.7rem;
+}
+
+.header-bottom .navbar a:hover {
+  text-decoration: underline;
+}
+
+.header-bottom .navbar i:first-of-type {
+  font-size  : 30px;
+  line-height: 30px;
+}
+
+.header-bottom .navbar span {
+  line-height: 1rem;
+}
+
+.offcanvas-body a {
+  color  : #000 !important;
+  padding: 1rem 2rem !important;
+}
+
+.offcanvas-body a:hover {
+  background-color: #198754;
+  color           : #fff !important;
+}
+
+.user-icon {
+  cursor: pointer;
+}
+
+.btn {
+  z-index: unset !important;
+}
+
+.hide-search {
+  display: none !important;
+}

@@ -1,0 +1,26 @@
+.user-taskbar{
+    display: flex;
+} 
+/*
+.guest-taskbar{
+    display: none;
+} */
+.taskbar-btn{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #262627;
+    font-weight: 600;
+    width: 132px;
+    text-align: center;
+}
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.nav-link{
+    cursor: pointer;
+}
